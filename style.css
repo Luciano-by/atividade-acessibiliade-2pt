@@ -1,0 +1,334 @@
+html{
+    font-size:100%;
+    transition:all 0.3s ease;
+}
+
+/* contraste */
+
+body.modo_contraste{
+
+    background:#000;
+    color:#fff;
+
+}
+
+/* textos */
+
+body.modo_contraste h1,
+body.modo_contraste h2,
+body.modo_contraste h3,
+body.modo_contraste p,
+body.modo_contraste a{
+
+    color:#000000;
+
+}
+
+/* detalhes rosa */
+
+body.modo_contraste header,
+body.modo_contraste footer,
+body.modo_contraste .div_conteiner_banner_receitas{
+
+    background:#e57373;
+
+}
+
+/* bordas e separações */
+
+body.modo_contraste section,
+body.modo_contraste main{
+
+    border-color:#fff;
+
+}
+
+/* imagens mais destacadas */
+
+body.modo_contraste img{
+
+    filter:contrast(130%) brightness(110%);
+
+}
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+a:focus,
+button:focus{
+
+outline:3px solid #000000;
+outline-offset:3px;
+
+}
+/* HEADER */
+
+.clss_header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:#e57373;
+    color:white;
+}
+
+.clss_header img{
+    width:100px;
+}
+
+.clss_nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.clss_nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+.clss_ul_item{
+
+display:flex;
+align-items:center;
+gap:20px;
+list-style:none;
+
+}
+
+.clss_acessibilidade button{
+
+padding:5px 10px;
+border:none;
+border-radius:5px;
+background:#ffb48a;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+.clss_acessibilidade button:hover{
+
+opacity:0.8;
+
+}
+
+/* contraste */
+
+body.contraste{
+
+filter:contrast(120%) brightness(95%);
+
+}
+
+/* BANNER */
+
+.banner_content{
+    height:320px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background-image:url("img/img_bolo_2.png");
+    background-size:cover;
+    background-position:center;
+
+    border-radius:0 0 30px 30px;
+}
+
+/* efeito escuro por cima da imagem */
+
+.banner_content::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:320px;
+    background:rgba(0,0,0,0.3);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.btn_banner{
+    position:relative;
+    padding:15px 45px;
+    background:#e57373;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    color: white;
+}
+
+/* .banner_content{
+    background:#e57373;
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:0 0 30px 30px;
+}
+
+.btn_banner{
+    padding:15px 40px;
+    border:none;
+    background:#ffb48a;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+} */
+
+/* TITULO */
+
+.clss_title{
+    font-size:32px;
+    margin:40px 60px 20px 60px;
+    color:#e57373;
+}
+
+/* RECEITAS */
+
+.section_main{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:0 60px;
+}
+
+.div_conteiner_banner_receitas{
+    background:#e57373;
+    border-radius:20px;
+    padding:15px;
+    text-align:center;
+    color:white;
+    transition:0.3s;
+}
+
+.div_conteiner_banner_receitas:hover{
+    transform:scale(1.05);
+}
+
+.div_conteiner_banner_receitas img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+.section_receita_video{
+
+    margin:60px;
+    background:#e57373;
+    padding:20px;
+    border-radius:25px;
+    color:white;
+
+}
+
+.container_video_receita{
+
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+
+}
+
+.container_video_receita video{
+
+    width:100%;
+    max-width:700px;
+    border-radius:20px;
+    background:black;
+
+}
+#id_receita_video  h2
+{
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+.section_receitas_extra{
+
+margin:60px;
+padding:40px;
+background:#ffffff;
+border-radius:25px;
+
+}
+
+.container_receitas_bloco{
+
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+
+}
+
+.bloco_receita{
+
+background:#e57373;
+padding:20px;
+border-radius:15px;
+color:white;
+transition:0.3s;
+
+}
+
+.bloco_receita:hover{
+
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+.bloco_receita h3{
+
+margin-bottom:10px;
+
+}
+
+/* FOOTER */
+
+.clss_footer{
+    margin-top:60px;
+    background:#e57373;
+    padding:40px 60px;
+    display:flex;
+    justify-content:space-between;
+    color:white;
+}
+
+.membros_div,
+.fontes_div{
+    max-width:400px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+    .clss_header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .section_main{
+        padding:0 20px;
+    }
+
+    .clss_footer{
+        flex-direction:column;
+        gap:30px;
+    }
+
+}
